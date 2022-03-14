@@ -1,9 +1,8 @@
 const Bedroom = (props) => {
   return ( 
-    <div>
-      <h2>Bedroom {props.bedNum}</h2>
+    <div className='bedroom' id={`bedroom-${props.bedNum}`}>
+      <h3>Bedroom {props.bedNum}</h3>
     </div>
-   );
+    );
 }
- 
 export default Bedroom;

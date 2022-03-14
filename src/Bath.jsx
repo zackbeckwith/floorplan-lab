@@ -1,7 +1,7 @@
 const Bath= (props) => {
   return ( 
-    <div>
-      <h2> {props.size} Bath</h2>
+    <div className='bath' id={`${props.size}-bath`}>
+      <h3> {props.size} Bath</h3>
     </div>
    );
 }

@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+div {
+  border: 1px solid grey;
+  margin: 5px;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  border: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#floorplan {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    "bedroom-1 half-bath kitchen"
+    "living-room living-room living-room"
+    "bedroom-2 full-bath bedroom-3";
+  width: 500px;
+  height: 400px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#Full-bath { 
+  grid-area: full-bath; 
+  background-color: red;
 }
 
-.App-link {
-  color: #61dafb;
+#Half-bath { 
+  grid-area: half-bath; 
+  background-color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#living-room { 
+  grid-area: living-room; 
+  background-color: green;
+}
+
+#kitchen {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "oven sink"
+    ". ."
+    ". .";
+  grid-area: kitchen;
+  background-color: yellow;
+}
+
+#oven { grid-area: oven; 
+  background-color: orange;
+}
+
+#sink { grid-area: sink; 
+  background-color: pink; 
+}
+
+#bedroom-2 { 
+  grid-area: bedroom-2; 
+  background-color: purple;
+}
+
+#bedroom-1 { 
+  grid-area: bedroom-1; 
+  background-color: magenta;
+}
+
+#bedroom-3 { 
+  grid-area: bedroom-3; 
+  background-color: teal;
 }
