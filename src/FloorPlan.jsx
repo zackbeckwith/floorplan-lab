@@ -1,11 +1,15 @@
+import Bath from "./Bath";
+import Bedroom from "./Bedroom";
 import Kitchen from "./Kitchen";
+import LivingRoom from "./LivingRoom";
 
 const FloorPlan = (props) => {
   return (  
     <>
-    <h1>
-
-    </h1>
+      <Kitchen key='Kitchen' />
+      <Bath key='Bath' />
+      <LivingRoom key='LivingRoom'/>
+      <Bedroom key='Bedroom'/>
     </>
   );
 }

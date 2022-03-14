@@ -3,7 +3,11 @@ import Sink from "./Sink";
 
 const Kitchen = (props) => {
   return (
-    <h1>Kitchen</h1>
+    <div>
+    <h2>Kitchen</h2>
+    <Oven key='Oven' />
+    <Sink key='Sink' />
+    </div>
     );
 }
  
